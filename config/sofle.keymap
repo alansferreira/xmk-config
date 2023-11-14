@@ -12,12 +12,13 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+    led_strip {
+        chain-length = 58;
+    };
+
     keymap {
         compatible = "zmk,keymap";
         
-        led_strip {
-            chain-length = <58>;
-        };
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
