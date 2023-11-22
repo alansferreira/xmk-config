@@ -1,4 +1,9 @@
+#include "../nrf52-bindings.h"
 #include <dt-bindings/led/led.h>
+
+&i2c2 {
+	status = "disabled";
+};
 
 &spi1 {
 	compatible = "nordic,nrf-spim";
@@ -26,6 +31,10 @@
 };
 
 / {
+	aliases {
+		led-strip = &led_strip;
+	};
+
 	chosen {
 		zmk,underglow = &led_strip;
 	};
