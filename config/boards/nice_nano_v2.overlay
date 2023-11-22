@@ -1,4 +1,3 @@
-#include "../nrf52-bindings.h"
 #include <dt-bindings/led/led.h>
 
 &i2c2 {
